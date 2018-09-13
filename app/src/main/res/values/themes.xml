@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="TextAppearance.App.TextinputLayout" parent="@style/Widget.Design.TextInputLayout">
+        <item name="android:textColor">@color/light_gray</item>
+        <item name="android:textColorHint">@color/light_gray</item>
+        <item name="android:textColorHighlight">@color/light_gray</item>
+        <item name="android:textColorLink">@color/light_gray</item>
+        <item name="android:textSize">17sp</item>
+        <item name="colorAccent">@color/light_gray</item>
+        <item name="colorControlNormal">@color/colorPrimary</item>
+        <item name="colorControlActivated">@color/colorPrimary</item>
+    </style>
+
+</resources>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/gradient_background"
+    tools:ignore="MissingPrefix" >
+
+    <ImageView
+        android:id="@+id/imageFrutta"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/fruit_salad"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/tvInserisciDati"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/inserisci_i_tuoi_dati"
+        android:layout_marginTop="8dp"
+        android:textSize="20sp"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:layout_below="@id/imageFrutta"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="12dp"
+        android:orientation="vertical"
+        android:layout_below="@+id/tvInserisciDati">
+
+        <EditText
+            android:id="@+id/tvNome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nome"
+            android:autoSizeTextType="uniform"
+            app:autoSizeTextType="uniform"
+            android:textColor="@android:color/black"
+            android:background="@drawable/edit_text_backgorund"/>
+
+        <EditText
+            android:id="@+id/tvCognome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:autoSizeTextType="uniform"
+            app:autoSizeTextType="uniform"
+            android:hint="Cognome"
+            android:textColor="@android:color/black"
+            android:background="@drawable/edit_text_backgorund"/>
+
+        <EditText
+            android:id="@+id/tvUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:autoSizeTextType="uniform"
+            app:autoSizeTextType="uniform"
+            android:hint="Username (nome azienda)"
+            android:singleLine="true"
+            android:textColor="@android:color/black"
+            android:background="@drawable/edit_text_backgorund"/>
+
+        <EditText
+            android:id="@+id/tvPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:autoSizeTextType="uniform"
+            app:autoSizeTextType="uniform"
+            android:inputType="textPassword"
+            android:textColor="@android:color/black"
+            android:hint="Password"
+            android:background="@drawable/edit_text_backgorund"/>
+
+        <EditText
+            android:id="@+id/tvConfermaPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:autoSizeTextType="uniform"
+            app:autoSizeTextType="uniform"
+            android:inputType="textPassword"
+            android:textColor="@android:color/black"
+            android:hint="Conferma Password"
+            android:background="@drawable/edit_text_backgorund"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/rounded_button"
+            android:text="Registrati"
+            android:textAllCaps="false"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

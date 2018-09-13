@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_home"
+        android:checkable="true"
+        app:showAsAction="ifRoom"
+        android:enabled="true"
+        android:checked="true"
+        android:icon="@drawable/outline_home_black_24"
+        android:title="@string/home" />
+
+    <item
+        android:id="@+id/action_ordini"
+        android:enabled="true"
+        android:checkable="true"
+        android:icon="@drawable/outline_assignment_black_24"
+        app:showAsAction="ifRoom"
+        android:title="@string/ordini"/>
+
+
+    <item
+        android:id="@+id/action_consumi"
+        android:enabled="true"
+        android:checkable="true"
+        android:icon="@drawable/outline_account_circle_black_24"
+        app:showAsAction="ifRoom"
+        android:title="@string/profilo" />
+    <item
+        android:id="@+id/action_novita"
+        app:showAsAction="ifRoom"
+        android:enabled="true"
+        android:checkable="true"
+        android:icon="@drawable/outline_info_black_24"
+        android:title="@string/info" />
+
+</menu>
